@@ -1,0 +1,47 @@
+.bwaHeader .nav-item {
+  margin-right: 22px;
+}
+
+.bwaHeader .nav-link {
+  color: var(--black);
+  position: relative;
+}
+
+.bwaHeader .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  height: 2px;
+  width: calc(100% - 15px);
+  background: var(--purple);
+  border-radius: 2px;
+  transform: translate(-50%, -2px);
+}
+
+.bwaHeader .btn-login {
+  background: var(--light-purple);
+  color: var(--purple);
+  font-weight: var(--bold);
+  border: none;
+  width: 120px;
+  height: 56px;
+  display: block;
+  border-radius: 12px;
+  padding: 16px 28px;
+  display: block;
+}
+
+.bwaHeader .btn-login:focus {
+  box-shadow: 0 0 0 0.25rem var(--purple);
+}
+
+.bwaHeader .input-food {
+  height: 56px;
+  border: none;
+  border-radius: 12px;
+}
+
+.bwaHeader .input-food:focus {
+  box-shadow: 0 0 0 0.25rem var(--purple);
+}
