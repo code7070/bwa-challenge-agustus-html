@@ -1,0 +1,16 @@
+.popular-section {
+  position: relative;
+}
+
+.popular-section .ps--left-content {
+  width: 367px;
+}
+
+.popular-section .ps--header {
+  margin-bottom: 20px;
+}
+
+.popular-section .ps--story-line {
+  margin-bottom: 56px;
+  max-width: 340px;
+}

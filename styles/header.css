@@ -61,5 +61,5 @@
 }
 
 .bwa-header .input-group.search.active {
-  box-shadow: 0 0 0 0.25rem var(--purple);
+  box-shadow: var(--box-shadow-outline) var(--purple);
 }

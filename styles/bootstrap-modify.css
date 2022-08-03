@@ -6,3 +6,11 @@ button,
   font-weight: var(--semibold);
   font-family: var(--font-set);
 }
+
+.btn-bwa-yellow {
+  background: var(--yellow);
+}
+
+.btn-bwa-yellow:focus {
+  box-shadow: var(--box-shadow-outline) var(--light-yellow);
+}

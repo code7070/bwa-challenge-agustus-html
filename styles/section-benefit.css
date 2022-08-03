@@ -46,6 +46,10 @@
   overflow: hidden;
 }
 
+.benefit-section .bs--benefit-card .card-footer * {
+  font-weight: var(--semibold);
+}
+
 .benefit-section .bs--benefit-card .card-footer > div {
   position: relative;
 }
