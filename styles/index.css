@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("../..fonts/Poppins/Poppins-Bold.ttf");
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
   font-weight: 700;
 }
 
@@ -33,17 +33,22 @@ body {
 }
 
 * {
+  font-family: "Poppins", Nunito, sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #232631;
 }
 
 :root {
+  --font-set: "Poppins", Nunito, sans-serif;
+
   --black: #232631;
   --purple: #5a4fcf;
   --light-purple: rgba(90, 79, 207, 0.1);
   --yellow: #fdc886;
+  --grey: #656565;
 
+  --regular: 400;
   --semibold: 600;
   --bold: 700;
 }
