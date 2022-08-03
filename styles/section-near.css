@@ -1,0 +1,33 @@
+.near-section {
+  position: relative;
+}
+
+.near-section .ns--content {
+  margin-bottom: 56px;
+}
+
+.near-section .dropdown.ns--select-city #selectorCity {
+  background: #f2f2f2;
+  border: none;
+  color: var(--grey);
+}
+
+.near-section .dropdown.ns--select-city #selectorCity * {
+  color: var(--grey);
+}
+
+.near-section .dropdown.ns--select-city #selectorCity::after {
+  display: none;
+}
+
+.near-section .dropdown.ns--select-city .dropdown-menu {
+  border-radius: 12px;
+}
+
+.near-section .dropdown.ns--select-city .dropdown-menu button {
+  border-radius: 0;
+}
+
+.near-section .dropdown.ns--select-city .dropdown-menu button:active {
+  background: var(--purple);
+}
