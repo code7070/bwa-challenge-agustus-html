@@ -1,0 +1,67 @@
+.benefit-section .bs--head {
+  position: relative;
+  margin-bottom: 41px;
+}
+
+.benefit-section .bs--list {
+  /* position: relative; */
+}
+
+.benefit-section .bs--benefit-card {
+  margin: 0 10px;
+  background: #fff;
+  border: none;
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+}
+
+.benefit-section .bs--benefit-card .card-body {
+  padding: 24px;
+  text-align: center;
+}
+
+.benefit-section .bs--benefit-card .bs--benefit-icon {
+  margin-bottom: 24px;
+}
+
+.benefit-section .bs--benefit-card .bs--benefit-name {
+  font-weight: var(--semibold);
+  font-size: var(--fontsize-medium);
+  margin-bottom: 12px;
+}
+
+.benefit-section .bs--benefit-card .bs--benefit-desc {
+  margin-bottom: 30px;
+}
+
+.benefit-section .bs--benefit-card .card-footer {
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px 12px 24px;
+  border: none;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-section .bs--benefit-card .card-footer > div {
+  position: relative;
+}
+
+.benefit-section .bs--benefit-card .card-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--yellow);
+  transform: translate(0, 100%);
+  transition: 0.25s ease-in-out;
+}
+
+.benefit-section .bs--benefit-card:hover .card-footer::before {
+  transform: translate(0, 0%);
+}

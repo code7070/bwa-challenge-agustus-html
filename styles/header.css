@@ -1,13 +1,17 @@
-.bwaHeader .nav-item {
+.bwa-header {
+  margin-bottom: 60px;
+}
+
+.bwa-header .nav-item {
   margin-right: 22px;
 }
 
-.bwaHeader .nav-link {
+.bwa-header .nav-link {
   color: var(--black);
   position: relative;
 }
 
-.bwaHeader .nav-link.active::after {
+.bwa-header .nav-link.active::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -19,7 +23,7 @@
   transform: translate(-50%, -2px);
 }
 
-.bwaHeader .btn-login {
+.bwa-header .btn-login {
   background: var(--light-purple);
   color: var(--purple);
   font-weight: var(--bold);
@@ -29,18 +33,18 @@
   font-family: "Poppins";
 }
 
-.bwaHeader .btn-login:focus {
+.bwa-header .btn-login:focus {
   box-shadow: 0 0 0 0.25rem var(--purple);
 }
 
-.bwaHeader .input-group.search {
+.bwa-header .input-group.search {
   background: #fff;
   border-radius: 12px;
   padding: 16px 28px;
   max-height: 56px;
 }
 
-.bwaHeader .input-group.search .input-group-prepend .input-group-text {
+.bwa-header .input-group.search .input-group-prepend .input-group-text {
   height: 100%;
   border: none;
   border-radius: 0;
@@ -48,7 +52,7 @@
   padding: 0;
 }
 
-.bwaHeader .input-group.search input[type="search"] {
+.bwa-header .input-group.search input[type="search"] {
   border: none;
   border-radius: 0;
   box-shadow: none;
@@ -56,6 +60,6 @@
   width: 230px;
 }
 
-.bwaHeader .input-group.search.active {
+.bwa-header .input-group.search.active {
   box-shadow: 0 0 0 0.25rem var(--purple);
 }

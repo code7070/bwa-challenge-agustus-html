@@ -6,8 +6,3 @@ button,
   font-weight: var(--semibold);
   font-family: var(--font-set);
 }
-
-.text-small-grey {
-  color: var(--grey);
-  font-weight: var(--regular);
-}

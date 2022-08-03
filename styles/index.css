@@ -51,4 +51,17 @@ body {
   --regular: 400;
   --semibold: 600;
   --bold: 700;
+
+  --fontsize-regular: 16px;
+  --fontsize-medium: 18px;
+  --fontsize-big: 28px;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+.text-small-grey {
+  color: var(--grey);
+  font-weight: var(--regular);
 }

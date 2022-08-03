@@ -1,0 +1,23 @@
+.head-section {
+  position: relative;
+}
+
+.head-section * {
+  font-weight: var(--semibold);
+}
+
+.head-section .small-title {
+  color: var(--purple);
+  margin-bottom: 6px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.head-section .big-title {
+  color: var(--black);
+  font-size: 28px;
+}
+
+.head-section.center * {
+  text-align: center;
+}
