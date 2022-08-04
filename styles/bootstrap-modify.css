@@ -8,6 +8,14 @@ button,
   font-family: var(--font-set);
 }
 
+.btn#selectorCity:hover {
+  box-shadow: var(--box-shadow-outline) var(--light-purple);
+}
+
+.btn#selectorCity:focus {
+  box-shadow: var(--box-shadow-outline) rgba(130, 138, 145, 50%);
+}
+
 .btn-bwa-yellow {
   background: var(--yellow);
   align-items: center;

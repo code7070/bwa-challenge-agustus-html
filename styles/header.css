@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.bwa-header .nav-link:hover {
+  color: var(--purple);
+}
+
 .bwa-header .nav-link.active::after {
   content: "";
   position: absolute;
@@ -33,8 +37,12 @@
   font-family: "Poppins";
 }
 
+.bwa-header .btn-login:hover {
+  box-shadow: var(--box-shadow-outline) var(--light-purple);
+}
+
 .bwa-header .btn-login:focus {
-  box-shadow: 0 0 0 0.25rem var(--purple);
+  box-shadow: var(--box-shadow-outline) var(--purple);
 }
 
 .bwa-header .input-group.search {
@@ -42,6 +50,10 @@
   border-radius: 12px;
   padding: 16px 28px;
   max-height: 56px;
+}
+
+.bwa-header .input-group.search:hover {
+  box-shadow: var(--box-shadow-outline) var(--light-purple);
 }
 
 .bwa-header .input-group.search .input-group-prepend .input-group-text {

@@ -10,6 +10,11 @@ let elExperienceYears = document.getElementById("chefExperience");
 let expValue = "12 Years";
 elExperienceYears.innerHTML = expValue;
 
+let elWorkAt = document.getElementById("chefWorkAt");
+
+//
+// classlist helper function
+
 function addClassList(el, className = "") {
   if (!el) return false;
   return el.classList.add(className);
@@ -32,11 +37,13 @@ function clickChef(el) {
     // set animation photo
     addClassList(elPhoto, "animate");
     addClassList(elExperience, "animate");
+    addClassList(elWorkAt, "animate");
 
     // Final action for chef profile
     setTimeout(() => {
       removeClassList(elPhoto, "animate");
       removeClassList(elExperience, "animate");
+      removeClassList(elWorkAt, "animate");
 
       //replace chef photo
       elChefPhoto.src = chefPhoto;
