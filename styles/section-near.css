@@ -29,5 +29,6 @@
 }
 
 .near-section .dropdown.ns--select-city .dropdown-menu button:active {
-  background: var(--purple);
+  background: var(--yellow);
+  color: var(--black);
 }

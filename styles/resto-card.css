@@ -2,6 +2,11 @@
   position: relative;
   border-radius: 24px;
   overflow: hidden;
+  width: var(--resto-card-width);
+  height: 415px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
 }
 
 .resto-card .card-body {
@@ -25,17 +30,21 @@
 .resto-card .resto-info {
   background: #fff;
   padding: 24px;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  bottom: 33px;
+  transform: translate(-50%, 0);
   border-radius: 24px;
+  width: calc(var(--resto-card-width) - 48px);
+  transition: 0.25s ease-in-out;
 }
 
 .resto-card .resto-info .resto-rating {
-  color: var(--yellow);
-  font-weight: var(--semibold);
   margin-bottom: 4px;
+  width: 100%;
 }
 
-.resto-card .resto-info .resto-rating * {
+.resto-card .resto-info .resto-rating .resto-rating-point * {
   color: var(--yellow);
   font-weight: var(--semibold);
 }
@@ -43,9 +52,41 @@
 .resto-card .resto-info .resto-name {
   font-weight: var(--semibold);
   font-size: var(--fontsize-medium);
+  width: 100%;
 }
 
 .resto-card .resto-info .resto-price {
   color: var(--grey);
   font-size: var(--fontsize-medium);
+  width: 100%;
+}
+
+.resto-card .resto-info .resto-location * {
+  color: var(--grey);
+}
+
+.resto-card.featured {
+  width: var(--resto-card-featured-width);
+  height: 475px;
+  transition: all 0.25s ease-in-out;
+}
+
+.resto-card.featured:hover {
+  box-shadow: 0 0 0 0.25rem var(--purple);
+}
+
+.resto-card.featured:not(:last-child) {
+  margin-right: 20px;
+}
+
+.resto-card.featured.lean {
+  width: 214px;
+}
+
+.resto-card.featured .resto-info {
+  width: calc(var(--resto-card-featured-width) - 48px);
+}
+
+.resto-card.featured.lean .resto-info {
+  transform: translate(-250%, 0);
 }

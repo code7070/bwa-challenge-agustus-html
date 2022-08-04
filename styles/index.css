@@ -60,6 +60,9 @@ body {
   --fontsize-big: 28px;
 
   --box-shadow-outline: 0 0 0 0.25rem;
+
+  --resto-card-width: 427px;
+  --resto-card-featured-width: 400px;
 }
 
 section {
