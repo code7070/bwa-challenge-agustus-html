@@ -22,6 +22,11 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/Nunito/static/Nunito-ExtraBold.ttf");
+}
+
 body {
   position: relative;
   background: #fafafa;

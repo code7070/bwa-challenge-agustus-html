@@ -27,6 +27,21 @@
   transform: translate(-50%, -2px);
 }
 
+.bwa-header .bwa-logo {
+  text-decoration: none;
+}
+
+.bwa-header .bwa-logo img {
+  width: 34px;
+}
+
+.bwa-header .bwa-logo span {
+  font-family: "Nunito";
+  font-size: var(--fontsize-big);
+  color: var(--black);
+  text-decoration: none;
+}
+
 .bwa-header .btn-login {
   background: var(--light-purple);
   color: var(--purple);
