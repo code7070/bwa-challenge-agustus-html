@@ -1,45 +1,72 @@
+// declare chef photo
 let chefPhoto = "./assets/images/chef/phoenix-satcheup.jpg";
 let elChefPhoto = document.getElementById("chefPhoto");
-
+let elPhoto = document.getElementById("csChefPhoto");
 elChefPhoto.src = chefPhoto;
+
+// declare chef experience
+let elExperience = document.getElementById("csChefExperience");
+let elExperienceYears = document.getElementById("chefExperience");
+let expValue = "12 Years";
+elExperienceYears.innerHTML = expValue;
+
+function addClassList(el, className = "") {
+  if (!el) return false;
+  return el.classList.add(className);
+}
+
+function removeClassList(el, className) {
+  if (!el) return false;
+  return el.classList.remove(className);
+}
 
 function clickChef(el) {
   if (!el.classList.contains("active")) {
     // Check and remove other active selector
     const otherEl = document.querySelectorAll(".cs--selector");
-    if (otherEl.forEach((el) => el.classList.remove("active")));
+    if (otherEl.forEach((el) => removeClassList(el, "active")));
 
     // set active to caller selector
-    el.classList.add("active");
+    addClassList(el, "active");
 
     // set animation photo
-    const elPhoto = document.getElementById("csChefPhoto");
-    elPhoto.classList.add("animate");
+    addClassList(elPhoto, "animate");
+    addClassList(elExperience, "animate");
+
+    // Final action for chef profile
     setTimeout(() => {
-      elPhoto.classList.remove("animate");
+      removeClassList(elPhoto, "animate");
+      removeClassList(elExperience, "animate");
 
       //replace chef photo
       elChefPhoto.src = chefPhoto;
+
+      //replace chef experience
+      elExperienceYears.innerHTML = expValue;
     }, 250);
   }
 }
 
 function clickChef1(el) {
   chefPhoto = "./assets/images/chef/phoenix-satcheup.jpg";
+  expValue = "12 Years";
   clickChef(el);
 }
 
 function clickChef2(el) {
   chefPhoto = "./assets/images/chef/gaz-oakley.jpg";
+  expValue = "4 Years";
   clickChef(el);
 }
 
 function clickChef3(el) {
   chefPhoto = "./assets/images/chef/renatta-moeloek.jpg";
+  expValue = "7 Years";
   clickChef(el);
 }
 
 function clickChef4(el) {
   chefPhoto = "./assets/images/chef/chef-merlin.jpg";
+  expValue = "10 Years";
   clickChef(el);
 }

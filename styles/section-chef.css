@@ -41,6 +41,14 @@
   height: 204px;
   border: none;
   box-shadow: 8px 8px 25px var(--transparent-grey);
+  transition: 0.25s ease-in-out;
+  transform: translate(0%, 0);
+  opacity: 1;
+}
+
+.chef-section .cs--experience.animate {
+  transform: translate(-25%, 0);
+  opacity: 0.1;
 }
 
 .chef-section .cs--experience .card-body {
