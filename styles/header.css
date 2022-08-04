@@ -63,3 +63,15 @@
 .bwa-header .input-group.search.active {
   box-shadow: var(--box-shadow-outline) var(--purple);
 }
+
+.bwa-header .dropdown-menu {
+  border-radius: 12px;
+}
+
+.bwa-header .dropdown-item {
+  padding: 16px 28px;
+}
+
+.bwa-header .dropdown-item:active {
+  background: var(--purple);
+}
