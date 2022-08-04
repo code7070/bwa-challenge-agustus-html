@@ -1,0 +1,51 @@
+.resto-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.resto-card .card-body {
+  padding: 24px 33px;
+}
+
+.resto-card .resto-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.resto-card .resto-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.resto-card .resto-info {
+  background: #fff;
+  padding: 24px;
+  position: relative;
+  border-radius: 24px;
+}
+
+.resto-card .resto-info .resto-rating {
+  color: var(--yellow);
+  font-weight: var(--semibold);
+  margin-bottom: 4px;
+}
+
+.resto-card .resto-info .resto-rating * {
+  color: var(--yellow);
+  font-weight: var(--semibold);
+}
+
+.resto-card .resto-info .resto-name {
+  font-weight: var(--semibold);
+  font-size: var(--fontsize-medium);
+}
+
+.resto-card .resto-info .resto-price {
+  color: var(--grey);
+  font-size: var(--fontsize-medium);
+}

@@ -47,6 +47,7 @@ function clickChef(el) {
   }
 }
 
+// Group for chef selector action value
 function clickChef1(el) {
   chefPhoto = "./assets/images/chef/phoenix-satcheup.jpg";
   expValue = "12 Years";
