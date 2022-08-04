@@ -11,9 +11,15 @@
       type="text/css"
       href="./assets/fontawesome-free-6.1.2-web/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/swiper-8.3.2/package/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
     <link rel="stylesheet" type="text/css" href="./styles/header.css" />
     <link rel="stylesheet" type="text/css" href="./styles/section-header.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/section-hero.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -87,6 +93,93 @@
       </nav>
     </header>
     <main>
+      <section class="hero-section">
+        <div class="swiper heroSlide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hs--resto-image">
+                <img
+                  alt="padang-restaurant-images"
+                  src="./assets/images/restaurant/padang-restaurant.jpg"
+                />
+              </div>
+              <div class="resto-info hs--resto-info">
+                <div class="resto-rating">
+                  <span class="resto-rating-point">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>5.0</span>
+                  </span>
+                  <span class="text-small-grey">(5.2K+)</span>
+                </div>
+                <div class="resto-name">Padang Restaurant</div>
+                <div class="resto-price">IDR 49.999 - IDR 560.000</div>
+                <div class="resto-location d-flex align-items-center">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span class="text-small-grey">Padang, Indonesia</span>
+                </div>
+                <div class="resto-reservation">
+                  <button class="btn btn-bwa-yellow">Make Reservation</button>
+                  <div class="resto-reservation-cost d-flex align-items-center">
+                    <img alt="info" src="./assets/images/info-square.svg" />
+                    <span class="text-small-grey">No Extra Cost</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hs--resto-image">
+                <img
+                  alt="coffee-tree-images"
+                  src="./assets/images/restaurant/coffee-tree.jpg"
+                />
+              </div>
+              <div class="resto-info hs--resto-info">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <div class="resto-rating">
+                      <span class="resto-rating-point">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.9</span>
+                      </span>
+                      <span class="text-small-grey">(5.7K+)</span>
+                    </div>
+                    <div class="resto-name">Coffee Tree</div>
+                    <div class="resto-price">IDR 29.999 - IDR 160.000</div>
+                    <div class="resto-location d-flex align-items-center">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span class="text-small-grey">Jakarta, Indonesia</span>
+                    </div>
+                    <div class="resto-reservation">
+                      <button class="btn btn-bwa-yellow">
+                        Make Reservation
+                      </button>
+                      <div
+                        class="resto-reservation-cost d-flex align-items-center"
+                      >
+                        <img alt="info" src="./assets/images/info-square.svg" />
+                        <span class="text-small-grey">No Extra Cost</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button class="btn btn-bwa-yellow btn-next">
+                      <i class="fa-solid fa-arrow-right fa-sm"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="benefit-section">
         <div class="container">
           <div class="head-section center bs--head">
@@ -531,6 +624,22 @@
       type="text/javascript"
       src="./assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
     ></script>
+
+    <!-- IMPORTING SWIPER SCRIPT -->
+    <script
+      type="text/javascript"
+      src="./assets/swiper-8.3.2/package/swiper-bundle.min.js"
+    ></script>
+
+    <!-- INITIALIZE SWIPER -->
+    <script>
+      var swiper = new Swiper(".heroSlide", {
+        slidesPerView: 1.3,
+        spaceBetween: 40,
+        slidesOffsetBefore: 80,
+        slidesOffsetAfter: 80,
+      });
+    </script>
 
     <!-- WEB FUNCTION -->
     <script type="text/javascript" src="./scripts/header.js"></script>

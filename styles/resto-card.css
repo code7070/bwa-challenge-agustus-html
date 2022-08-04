@@ -31,7 +31,7 @@
   object-fit: cover;
 }
 
-.resto-card .resto-info {
+.resto-info {
   background: #fff;
   padding: 24px;
   position: absolute;
@@ -43,34 +43,34 @@
   transition: 0.25s ease-in-out;
 }
 
-.resto-card .resto-info .resto-rating {
+.resto-info .resto-rating {
   margin-bottom: 4px;
   width: 100%;
 }
 
-.resto-card .resto-info .resto-rating .resto-rating-point .fa-solid {
+.resto-info .resto-rating .resto-rating-point .fa-solid {
   margin: 0;
   margin-right: 2px;
 }
 
-.resto-card .resto-info .resto-rating .resto-rating-point * {
+.resto-info .resto-rating .resto-rating-point * {
   color: var(--yellow);
   font-weight: var(--semibold);
 }
 
-.resto-card .resto-info .resto-name {
+.resto-info .resto-name {
   font-weight: var(--semibold);
   font-size: var(--fontsize-medium);
   width: 100%;
 }
 
-.resto-card .resto-info .resto-price {
+.resto-info .resto-price {
   color: var(--grey);
   font-size: var(--fontsize-medium);
   width: 100%;
 }
 
-.resto-card .resto-info .resto-location * {
+.resto-info .resto-location * {
   color: var(--grey);
 }
 
@@ -94,4 +94,24 @@
 
 .resto-card.featured.lean .resto-info {
   transform: translate(-250%, 0);
+}
+
+/*  */
+/* CONFIGURATION FOR RESTO-INFO ADS */
+/* OR CALLED BY HERO SECTION */
+.resto-info.hs--resto-info {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+
+  transition: all 0.25s ease-in-out;
+}
+
+.resto-info .resto-reservation {
+  margin-top: 34px;
+}
+
+.resto-info .resto-reservation .resto-reservation-cost {
+  margin-top: 12px;
 }
