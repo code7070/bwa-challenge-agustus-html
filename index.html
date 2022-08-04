@@ -4,12 +4,12 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="./fontawesome-free-6.1.2-web/css/all.min.css"
+      href="./assets/fontawesome-free-6.1.2-web/css/all.min.css"
     />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
     <link rel="stylesheet" type="text/css" href="./styles/header.css" />
@@ -25,6 +25,7 @@
       href="./styles/section-popular.css"
     />
     <link rel="stylesheet" type="text/css" href="./styles/section-near.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/section-chef.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -233,6 +234,32 @@
           </div>
         </div>
       </section>
+      <section class="chef-section">
+        <div class="container">
+          <div class="row gx-4 justify-content-between">
+            <div class="col-md-6">
+              <div class="cs--photo">
+                <img id="chefPhoto" alt="chef-photo" />
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="head-section">
+                <div class="small-title">Top 4 Expert Chefs</div>
+                <div class="big-title">Expert Chefs In Fuddy</div>
+              </div>
+              <div class="cs--selector">
+                <div class="card">
+                  <div class="card-body">Phoenix skecthup</div>
+                </div>
+              </div>
+              <button class="btn btn-bwa-yellow">
+                View All Chef
+                <i class="fa-solid fa-chevron-right sm fa-sm"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- BOOTSTRAP FUNCTION -->
@@ -243,5 +270,6 @@
 
     <!-- WEB FUNCTION -->
     <script type="text/javascript" src="./scripts/header.js"></script>
+    <script type="text/javascript" src="./scripts/chef.js"></script>
   </body>
 </html>
