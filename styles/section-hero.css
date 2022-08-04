@@ -4,6 +4,11 @@
 
 .swiper.heroSlide .swiper-slide {
   position: relative;
+  cursor: grab;
+}
+
+.swiper.heroSlide .swiper-slide:active {
+  cursor: grabbing;
 }
 
 .swiper.heroSlide .hs--resto-image {
@@ -39,4 +44,5 @@
 .swiper.heroSlide .swiper-slide-active .hs--resto-info {
   transform: translate(0%, -50%);
   opacity: 1;
+  box-shadow: -8px 8px 25px rgba(0, 0, 0, 0.05);
 }

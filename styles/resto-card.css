@@ -102,9 +102,9 @@
 .resto-info.hs--resto-info {
   position: absolute;
   top: 50%;
+  bottom: initial;
   left: 0;
   transform: translate(0, -50%);
-
   transition: all 0.25s ease-in-out;
 }
 
@@ -113,5 +113,10 @@
 }
 
 .resto-info .resto-reservation .resto-reservation-cost {
-  margin-top: 12px;
+  margin: 12px 0 0;
+  position: relative;
+}
+
+.resto-info .resto-reservation .resto-reservation-cost img {
+  display: block;
 }
