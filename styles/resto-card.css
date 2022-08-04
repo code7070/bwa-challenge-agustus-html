@@ -9,6 +9,10 @@
   transition: 0.25s ease-in-out;
 }
 
+.resto-card:not(:last-child) {
+  margin-right: 20px;
+}
+
 .resto-card .card-body {
   padding: 24px 33px;
 }
@@ -73,10 +77,6 @@
 
 .resto-card.featured:hover {
   box-shadow: 0 0 0 0.25rem var(--purple);
-}
-
-.resto-card.featured:not(:last-child) {
-  margin-right: 20px;
 }
 
 .resto-card.featured.lean {
