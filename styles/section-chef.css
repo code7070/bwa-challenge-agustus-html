@@ -100,7 +100,7 @@
   height: 100%;
   background: #fff;
   transform: translate(-50%, -50%) scale(0);
-  transition: 0.35s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .chef-section .cs--selector:hover::before {
