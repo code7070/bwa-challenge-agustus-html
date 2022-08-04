@@ -48,6 +48,11 @@
   width: 100%;
 }
 
+.resto-card .resto-info .resto-rating .resto-rating-point .fa-solid {
+  margin: 0;
+  margin-right: 2px;
+}
+
 .resto-card .resto-info .resto-rating .resto-rating-point * {
   color: var(--yellow);
   font-weight: var(--semibold);
