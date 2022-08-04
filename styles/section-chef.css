@@ -39,6 +39,8 @@
   right: 0;
   width: 180px;
   height: 204px;
+  border: none;
+  box-shadow: 8px 8px 25px var(--transparent-grey);
 }
 
 .chef-section .cs--experience .card-body {
@@ -141,5 +143,45 @@
 }
 
 .chef-section .cs--selector .cs--details * {
+  color: var(--yellow);
+}
+
+.chef-section .cs--workAt {
+  border: none;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  border-radius: 24px;
+  box-shadow: -8px 8px 25px var(--transparent-grey);
+}
+
+.chef-section .cs--workAt .card-body {
+  padding: 24px;
+}
+
+.chef-section .cs--workAt .cs--workImage {
+  width: 96px;
+  height: 132px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.chef-section .cs--workAt .cs--workImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.chef-section .cs--workAt .cs--workType {
+  margin-bottom: 4px;
+}
+
+.chef-section .cs--workAt .cs--workPlace {
+  font-weight: var(--semibold);
+  font-size: var(--fontsize-medium);
+  margin-bottom: 24px;
+}
+
+.chef-section .cs--workAt .cs--workDetails * {
   color: var(--yellow);
 }

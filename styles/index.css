@@ -48,6 +48,7 @@ body {
   --yellow: #fdc886;
   --light-yellow: rgb(249, 225, 195);
   --grey: #656565;
+  --transparent-grey: rgba(102, 102, 102, 0.04);
 
   --regular: 400;
   --semibold: 600;
