@@ -237,9 +237,19 @@
       <section class="chef-section">
         <div class="container">
           <div class="row gx-4 justify-content-between">
-            <div class="col-md-6">
+            <div class="col-md-6 cs--chef-profile">
               <div class="cs--photo">
                 <img id="chefPhoto" alt="chef-photo" />
+              </div>
+              <div class="card cs--experience">
+                <div class="card-body">
+                  <img
+                    alt="verified-icon"
+                    src="./assets/images/chef/verified-icon.svg"
+                  />
+                  <div class="cs--years">12 Years</div>
+                  <div class="cs--exp">Experience</div>
+                </div>
               </div>
             </div>
             <div class="col-md-5">
@@ -247,10 +257,36 @@
                 <div class="small-title">Top 4 Expert Chefs</div>
                 <div class="big-title">Expert Chefs In Fuddy</div>
               </div>
-              <div class="cs--selector">
-                <div class="card">
-                  <div class="card-body">Phoenix skecthup</div>
-                </div>
+              <div class="cs--selector-group">
+                <button
+                  class="card cs--selector active"
+                  onclick="clickChef1(this)"
+                >
+                  <div class="card-body d-flex justify-content-between">
+                    <div>
+                      <div class="cs--chef-skill text-small-grey">PIZZA</div>
+                      <div class="cs--chef-name">Phoenix Skecthup</div>
+                    </div>
+                    <div class="d-flex align-items-center cs--details">
+                      <span>Profile Details</span>
+                      <i class="fa-solid fa-chevron-right sm fa-sm"></i>
+                    </div>
+                  </div>
+                </button>
+                <button class="card cs--selector" onclick="clickChef2(this)">
+                  <div class="card-body d-flex justify-content-between">
+                    <div>
+                      <div class="cs--chef-skill text-small-grey">
+                        ROAST CHICKEN
+                      </div>
+                      <div class="cs--chef-name">Renatta Moeloek</div>
+                    </div>
+                    <div class="d-flex align-items-center cs--details">
+                      <span>Profile Details</span>
+                      <i class="fa-solid fa-chevron-right sm fa-sm"></i>
+                    </div>
+                  </div>
+                </button>
               </div>
               <button class="btn btn-bwa-yellow">
                 View All Chef
@@ -265,7 +301,7 @@
     <!-- BOOTSTRAP FUNCTION -->
     <script
       type="text/javascript"
-      src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
+      src="./assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
     ></script>
 
     <!-- WEB FUNCTION -->

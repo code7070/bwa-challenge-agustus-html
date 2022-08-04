@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/assets/fonts/Poppins/Poppins-Regular.ttf");
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
   font-weight: 400;
 }
 
@@ -55,6 +55,7 @@ body {
 
   --fontsize-regular: 16px;
   --fontsize-medium: 18px;
+  --fontsize-large: 22px;
   --fontsize-big: 28px;
 
   --box-shadow-outline: 0 0 0 0.25rem;
